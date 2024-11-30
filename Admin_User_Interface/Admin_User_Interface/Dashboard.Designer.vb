@@ -23,11 +23,11 @@ Partial Class Dashboard
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim Button1 As Button
-        Dim Button2 As Button
-        Dim Button3 As Button
-        Dim Button4 As Button
-        Dim Button5 As Button
-        Dim Button6 As Button
+        Dim Profile As Button
+        Dim Services As Button
+        Dim Request As Button
+        Dim About As Button
+        Dim Logout As Button
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Panel1 = New Panel()
         Panel3 = New Panel()
@@ -37,11 +37,11 @@ Partial Class Dashboard
         PictureBox1 = New PictureBox()
         Label2 = New Label()
         Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
-        Button5 = New Button()
-        Button6 = New Button()
+        Profile = New Button()
+        Services = New Button()
+        Request = New Button()
+        About = New Button()
+        Logout = New Button()
         Panel1.SuspendLayout()
         Panel5.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -55,97 +55,97 @@ Partial Class Dashboard
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.White
-        Button1.Location = New Point(0, 27)
+        Button1.Location = New Point(1, 27)
         Button1.Name = "Button1"
-        Button1.Size = New Size(272, 40)
+        Button1.Size = New Size(271, 40)
         Button1.TabIndex = 0
         Button1.Text = "Dashboard"
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' Profile
         ' 
-        Button2.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
-        Button2.BackgroundImageLayout = ImageLayout.None
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(0, 83)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(272, 40)
-        Button2.TabIndex = 1
-        Button2.Text = "My Profile"
-        Button2.UseVisualStyleBackColor = False
+        Profile.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
+        Profile.BackgroundImageLayout = ImageLayout.None
+        Profile.FlatAppearance.BorderSize = 0
+        Profile.FlatStyle = FlatStyle.Flat
+        Profile.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Profile.ForeColor = Color.White
+        Profile.Location = New Point(2, 84)
+        Profile.Name = "Profile"
+        Profile.Size = New Size(269, 40)
+        Profile.TabIndex = 1
+        Profile.Text = "My Profile"
+        Profile.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' Services
         ' 
-        Button3.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
-        Button3.BackgroundImageLayout = ImageLayout.None
-        Button3.FlatAppearance.BorderSize = 0
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.White
-        Button3.Location = New Point(0, 139)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(272, 40)
-        Button3.TabIndex = 2
-        Button3.Text = "Services"
-        Button3.UseVisualStyleBackColor = False
+        Services.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
+        Services.BackgroundImageLayout = ImageLayout.None
+        Services.FlatAppearance.BorderSize = 0
+        Services.FlatStyle = FlatStyle.Flat
+        Services.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Services.ForeColor = Color.White
+        Services.Location = New Point(1, 139)
+        Services.Name = "Services"
+        Services.Size = New Size(271, 40)
+        Services.TabIndex = 2
+        Services.Text = "Services"
+        Services.UseVisualStyleBackColor = False
         ' 
-        ' Button4
+        ' Request
         ' 
-        Button4.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
-        Button4.BackgroundImageLayout = ImageLayout.None
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.White
-        Button4.Location = New Point(0, 195)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(272, 40)
-        Button4.TabIndex = 3
-        Button4.Text = "Track my Reques"
-        Button4.UseVisualStyleBackColor = False
+        Request.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
+        Request.BackgroundImageLayout = ImageLayout.None
+        Request.FlatAppearance.BorderSize = 0
+        Request.FlatStyle = FlatStyle.Flat
+        Request.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Request.ForeColor = Color.White
+        Request.Location = New Point(2, 195)
+        Request.Name = "Request"
+        Request.Size = New Size(270, 40)
+        Request.TabIndex = 3
+        Request.Text = "Track my Reques"
+        Request.UseVisualStyleBackColor = False
         ' 
-        ' Button5
+        ' About
         ' 
-        Button5.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
-        Button5.BackgroundImageLayout = ImageLayout.None
-        Button5.FlatAppearance.BorderSize = 0
-        Button5.FlatStyle = FlatStyle.Flat
-        Button5.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = Color.White
-        Button5.Location = New Point(0, 251)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(272, 40)
-        Button5.TabIndex = 4
-        Button5.Text = "About Us"
-        Button5.UseVisualStyleBackColor = False
+        About.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
+        About.BackgroundImageLayout = ImageLayout.None
+        About.FlatAppearance.BorderSize = 0
+        About.FlatStyle = FlatStyle.Flat
+        About.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        About.ForeColor = Color.White
+        About.Location = New Point(1, 251)
+        About.Name = "About"
+        About.Size = New Size(271, 40)
+        About.TabIndex = 4
+        About.Text = "About Us"
+        About.UseVisualStyleBackColor = False
         ' 
-        ' Button6
+        ' Logout
         ' 
-        Button6.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
-        Button6.BackgroundImageLayout = ImageLayout.None
-        Button6.FlatAppearance.BorderSize = 0
-        Button6.FlatStyle = FlatStyle.Flat
-        Button6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button6.ForeColor = Color.White
-        Button6.Location = New Point(1, 307)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(272, 40)
-        Button6.TabIndex = 5
-        Button6.Text = "Logout"
-        Button6.UseVisualStyleBackColor = False
+        Logout.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
+        Logout.BackgroundImageLayout = ImageLayout.None
+        Logout.FlatAppearance.BorderSize = 0
+        Logout.FlatStyle = FlatStyle.Flat
+        Logout.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Logout.ForeColor = Color.White
+        Logout.Location = New Point(1, 307)
+        Logout.Name = "Logout"
+        Logout.Size = New Size(272, 40)
+        Logout.TabIndex = 5
+        Logout.Text = "Logout"
+        Logout.UseVisualStyleBackColor = False
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(149), CByte(194), CByte(236))
-        Panel1.Controls.Add(Button6)
+        Panel1.Controls.Add(Profile)
+        Panel1.Controls.Add(Logout)
         Panel1.Controls.Add(Panel3)
-        Panel1.Controls.Add(Button5)
-        Panel1.Controls.Add(Button4)
-        Panel1.Controls.Add(Button3)
-        Panel1.Controls.Add(Button2)
+        Panel1.Controls.Add(About)
+        Panel1.Controls.Add(Request)
+        Panel1.Controls.Add(Services)
         Panel1.Controls.Add(Button1)
         Panel1.Location = New Point(0, 42)
         Panel1.Margin = New Padding(3, 2, 3, 2)
@@ -163,7 +163,7 @@ Partial Class Dashboard
         ' Panel2
         ' 
         Panel2.BackColor = Color.FromArgb(CByte(237), CByte(134), CByte(191))
-        Panel2.Location = New Point(274, 493)
+        Panel2.Location = New Point(274, 492)
         Panel2.Margin = New Padding(3, 2, 3, 2)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(632, 46)
@@ -172,9 +172,9 @@ Partial Class Dashboard
         ' Panel4
         ' 
         Panel4.BackColor = SystemColors.ButtonHighlight
-        Panel4.Location = New Point(274, 48)
+        Panel4.Location = New Point(274, 45)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(632, 450)
+        Panel4.Size = New Size(632, 446)
         Panel4.TabIndex = 3
         ' 
         ' Panel5
@@ -218,7 +218,7 @@ Partial Class Dashboard
         Controls.Add(Panel2)
         Controls.Add(Panel4)
         Controls.Add(Panel1)
-        FormBorderStyle = FormBorderStyle.None
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Margin = New Padding(3, 2, 3, 2)
         Name = "Dashboard"

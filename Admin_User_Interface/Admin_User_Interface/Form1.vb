@@ -36,4 +36,11 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RoundedButton(Button1)
     End Sub
+
+    Private Sub Form1(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to close?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = DialogResult.No Then
+            e.Cancel = True
+        End If
+    End Sub
 End Class

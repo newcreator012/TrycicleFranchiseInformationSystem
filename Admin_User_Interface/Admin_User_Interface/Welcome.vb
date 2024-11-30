@@ -4,6 +4,13 @@
         RoundedButton(Button2)
     End Sub
 
+    Private Sub Welcome(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to close?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = DialogResult.No Then
+            e.Cancel = True
+        End If
+    End Sub
+
     Private Sub RoundedButton(j As Button)
         j.FlatAppearance.BorderSize = 0
         j.FlatStyle = FlatStyle.Flat
@@ -29,5 +36,11 @@
 
         j.Region = New Region(v)
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim dasboard As New Dashboard()
+        dasboard.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -37,16 +37,16 @@ Partial Class Form1
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(13), CByte(71), CByte(127))
-        Panel1.Location = New Point(0, 1)
+        Panel1.Location = New Point(0, 0)
         Panel1.Margin = New Padding(3, 2, 3, 2)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(957, 46)
+        Panel1.Size = New Size(800, 46)
         Panel1.TabIndex = 0
         ' 
         ' Panel2
         ' 
         Panel2.BackColor = Color.FromArgb(CByte(204), CByte(51), CByte(136))
-        Panel2.Location = New Point(0, 494)
+        Panel2.Location = New Point(0, 492)
         Panel2.Margin = New Padding(3, 2, 3, 2)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(800, 46)
@@ -140,6 +140,7 @@ Partial Class Form1
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         ForeColor = SystemColors.ActiveCaptionText
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Margin = New Padding(3, 2, 3, 2)
         Name = "Form1"

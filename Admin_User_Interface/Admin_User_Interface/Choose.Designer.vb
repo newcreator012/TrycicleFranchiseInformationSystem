@@ -22,16 +22,14 @@ Partial Class Choose
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Choose))
         Panel2 = New Panel()
+        PictureBox1 = New PictureBox()
+        Label2 = New Label()
         Panel1 = New Panel()
         Label1 = New Label()
         Button1 = New Button()
         Button2 = New Button()
-        Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(components)
-        Label2 = New Label()
-        PictureBox1 = New PictureBox()
         Panel2.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -46,12 +44,33 @@ Partial Class Choose
         Panel2.Size = New Size(809, 59)
         Panel2.TabIndex = 1
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(19, 8)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(51, 40)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 6
+        PictureBox1.TabStop = False
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(73, 18)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(271, 20)
+        Label2.TabIndex = 6
+        Label2.Text = "Tricycle Franchising Information System"
+        ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(204), CByte(51), CByte(136))
-        Panel1.Location = New Point(-3, 478)
+        Panel1.Location = New Point(-3, 488)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(805, 59)
+        Panel1.Size = New Size(805, 50)
         Panel1.TabIndex = 2
         ' 
         ' Label1
@@ -67,6 +86,8 @@ Partial Class Choose
         ' Button1
         ' 
         Button1.BackColor = Color.Black
+        Button1.BackgroundImageLayout = ImageLayout.None
+        Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = SystemColors.Control
         Button1.Location = New Point(304, 232)
@@ -79,6 +100,7 @@ Partial Class Choose
         ' Button2
         ' 
         Button2.BackColor = SystemColors.ControlDarkDark
+        Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button2.ForeColor = SystemColors.ButtonHighlight
         Button2.Location = New Point(304, 332)
@@ -87,27 +109,6 @@ Partial Class Choose
         Button2.TabIndex = 5
         Button2.Text = "Administrator"
         Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
-        Label2.Location = New Point(73, 18)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(271, 20)
-        Label2.TabIndex = 6
-        Label2.Text = "Tricycle Franchising Information System"
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(19, 8)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(51, 40)
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.TabIndex = 6
-        PictureBox1.TabStop = False
         ' 
         ' Choose
         ' 
@@ -121,7 +122,7 @@ Partial Class Choose
         Controls.Add(Panel2)
         Font = New Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ForeColor = SystemColors.ActiveCaptionText
-        FormBorderStyle = FormBorderStyle.None
+        FormBorderStyle = FormBorderStyle.FixedSingle
         HelpButton = True
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Choose"
@@ -138,7 +139,6 @@ Partial Class Choose
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
 End Class

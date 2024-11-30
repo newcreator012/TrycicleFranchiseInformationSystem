@@ -28,8 +28,12 @@ Partial Class Welcome
         Button1 = New Button()
         Button2 = New Button()
         Panel1 = New Panel()
+        PictureBox2 = New PictureBox()
+        Label3 = New Label()
         Panel2 = New Panel()
         PictureBox1 = New PictureBox()
+        Panel1.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -84,16 +88,39 @@ Partial Class Welcome
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(13), CByte(71), CByte(127))
-        Panel1.Location = New Point(0, 1)
+        Panel1.Controls.Add(PictureBox2)
+        Panel1.Controls.Add(Label3)
+        Panel1.Location = New Point(0, 0)
         Panel1.Margin = New Padding(3, 2, 3, 2)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(803, 46)
         Panel1.TabIndex = 4
         ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(5, 2)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(51, 40)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 7
+        PictureBox2.TabStop = False
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(59, 12)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(271, 20)
+        Label3.TabIndex = 8
+        Label3.Text = "Tricycle Franchising Information System"
+        ' 
         ' Panel2
         ' 
         Panel2.BackColor = Color.FromArgb(CByte(204), CByte(51), CByte(136))
-        Panel2.Location = New Point(0, 494)
+        Panel2.Location = New Point(0, 492)
         Panel2.Margin = New Padding(3, 2, 3, 2)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(803, 46)
@@ -122,10 +149,14 @@ Partial Class Welcome
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Margin = New Padding(3, 2, 3, 2)
         Name = "Welcome"
         Text = "TRICYCLE FRANCHISING INFORMATION SYSTEM"
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -138,4 +169,6 @@ Partial Class Welcome
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label3 As Label
 End Class

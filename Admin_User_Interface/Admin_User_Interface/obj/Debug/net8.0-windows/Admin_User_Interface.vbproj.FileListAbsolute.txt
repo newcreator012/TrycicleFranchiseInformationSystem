@@ -22,3 +22,4 @@ C:\Users\johnm\source\repos\Admin_User_Interface\Admin_User_Interface\obj\Debug\
 C:\Users\johnm\source\repos\Admin_User_Interface\Admin_User_Interface\obj\Debug\net8.0-windows\ref\Admin_User_Interface.dll
 C:\Users\johnm\source\repos\Admin_User_Interface\Admin_User_Interface\obj\Debug\net8.0-windows\Admin_User_Interface.Choose.resources
 C:\Users\johnm\source\repos\Admin_User_Interface\Admin_User_Interface\obj\Debug\net8.0-windows\Admin_User_Interface.Welcome.resources
+C:\Users\johnm\source\repos\Admin_User_Interface\Admin_User_Interface\obj\Debug\net8.0-windows\Admin_User_Interface.Dashboard.resources
